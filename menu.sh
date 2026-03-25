@@ -3,6 +3,12 @@
 export FILENAME="documento"
 repetir=true
 
+if [ "$1" == "-d" ]; then
+pkill -f consolidar.sh
+rm -rf "$HOME/EPNro1"
+echo "Entorno eliminado y procesos en background terminados. "
+fi
+
 while $repetir
 do
 
