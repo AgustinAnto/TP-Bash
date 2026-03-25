@@ -46,8 +46,8 @@ echo ""
 2)
 echo "Elegiste la opcion 2"
 if [ -d "$HOME/EPNro1" ]; then
-cp "$HOME/Desktop/TP-Bash/consolidar_v2.sh" "$HOME/EPNro1"
-bash "$HOME/EPNro1/consolidar_v2.sh" &
+cp "$HOME/Desktop/TP-Bash/consolidar.sh" "$HOME/EPNro1"
+bash "$HOME/EPNro1/consolidar.sh" &
 echo "Se esta corrienndo el proceso en background."
 else
 echo "Primero presione la opcion 1. "
@@ -101,7 +101,7 @@ fi
 6)
 if [ -d "$HOME/EPNro1" ]; then
 echo "El directorio existe. Eliminando."
-pkill -f consolidar_v2.sh
+pkill -f consolidar.sh
 rm -rf "$HOME/EPNro1"
 else
 echo "El directorio no existe."
