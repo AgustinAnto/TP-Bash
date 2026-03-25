@@ -101,6 +101,7 @@ fi
 6)
 if [ -d "$HOME/EPNro1" ]; then
 echo "El directorio existe. Eliminando."
+pkill -f consolidar_v2.sh
 rm -rf "$HOME/EPNro1"
 else
 echo "El directorio no existe."
